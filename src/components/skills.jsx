@@ -1,6 +1,7 @@
 import React from "react";
 import Bars from "react-bars";
 import ProgressBar from "react-bootstrap/ProgressBar";
+import { TypeAnimation } from "react-type-animation";
 import { AiFillGithub } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
 import { AiFillUnlock } from "react-icons/ai";
@@ -55,8 +56,29 @@ const Skills = () => {
               />
             </div>
             <div class="flex-grow">
-              <h2 class="text-gray-900 text-lg title-font font-medium mb-3">
+              <h2 class="text-gray-900 text-xl title-font font-medium mb-3">
                 JavaScript
+                <h4 class="title-font sm:text-sm text-l mb-4 font-bold font-prosto text-myblue">
+                  <p className="">
+                    <TypeAnimation
+                      sequence={[
+                        "❤", // Types 'One'
+                        2000, // Waits 1s
+                        "Love !", // Deletes 'One' and types 'Two'
+                        2000, // Waits 2s
+                        //   "Two Three", // Types 'Three' without deleting 'Two'
+                        () => {
+                          console.log("Done typing!"); // Place optional callbacks anywhere in the array
+                        },
+                      ]}
+                      wrapper="div"
+                      cursor={true}
+                      repeat={Infinity}
+                      //   style={{ fontSize: "2em" }}
+                    />
+                  </p>
+                  {/* <br class="hidden lg:inline-block">readymade gluten</br> */}
+                </h4>
               </h2>
               <p class="leading-relaxed text-base">
                 The Programming Language of the Web
@@ -213,6 +235,27 @@ const Skills = () => {
               <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
                 <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">
                   JavaScript
+                  <h4 class="title-font sm:text-sm text-l mb-4 font-bold font-prosto text-myblue">
+                    <p className="">
+                      <TypeAnimation
+                        sequence={[
+                          "❤", // Types 'One'
+                          2000, // Waits 1s
+                          "Love !", // Deletes 'One' and types 'Two'
+                          2000, // Waits 2s
+                          //   "Two Three", // Types 'Three' without deleting 'Two'
+                          () => {
+                            console.log("Done typing!"); // Place optional callbacks anywhere in the array
+                          },
+                        ]}
+                        wrapper="div"
+                        cursor={true}
+                        repeat={Infinity}
+                        //   style={{ fontSize: "2em" }}
+                      />
+                    </p>
+                    {/* <br class="hidden lg:inline-block">readymade gluten</br> */}
+                  </h4>
                 </h2>
                 <p class="leading-relaxed">
                   The Programming language of the Websites

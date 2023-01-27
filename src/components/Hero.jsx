@@ -18,9 +18,9 @@ const Hero = () => {
   };
   return (
     <div className="w-100%" id="hero">
-      <section class="text-gray-600 body-font ">
+      <section class="text-gray-600 body-font z-0 ">
         <div class="container mx-auto flex md:flex-row flex-col items-center">
-          <div class="animate__animated animate__fadeIn animate__delay-1s lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 border-2 border-orange-400 rounded-xl border-spacing-2">
+          <div class="animate__animated animate__fadeIn animate__delay-1s lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 border-2 border-orange-400 rounded-xl border-spacing-2 z-0">
             <img
               class="object-cover object-center rounded-xl animate__animated animate__fadeIn animate__delay-1s md:ml-10 border-2 border-orange-400 p-1"
               alt="hero"

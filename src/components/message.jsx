@@ -1,19 +1,26 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { useState } from "react";
-// import { button } from "react-router-dom";
+import { useSnackbar } from "notistack";
+
 import { BsFillSuitHeartFill } from "react-icons/bs";
 const Message = () => {
   const form = useRef();
+  //   const { enqueueSnackbar } = useSnackbar();
   const [clicked, setClicked] = useState(false);
+
   const handleClick = () => {
     // setClicked(true);
     setTimeout(() => {
       setClicked(false);
     }, 5000);
+    // enqueueSnackbar("Record added successfully", {
+    //   variant: "success",
+    // });
 
     setClicked(true);
   };
+
   const sendEmail = (e) => {
     e.preventDefault();
 
