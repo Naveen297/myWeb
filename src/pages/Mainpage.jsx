@@ -6,6 +6,7 @@ import Header from "../components/header";
 import Hero from "../components/Hero";
 import Skills from "../components/skills";
 import Message from "../components/message";
+import Ach from "../components/ach";
 
 const Mainpage = () => {
   return (
@@ -18,6 +19,7 @@ const Mainpage = () => {
         <Hero />
         <Skills />
         <Exp />
+        <Ach />
         <Cards />
         <Message />
       </div>

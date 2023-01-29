@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
         prosto: ["Prosto One"],
+        seasons: ["Seasons"],
 
         roboto: ["Roboto", "sans-serif"],
       },

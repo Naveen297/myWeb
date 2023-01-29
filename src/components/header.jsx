@@ -31,6 +31,11 @@ const Header = ({ showOptions }) => {
       .getElementById("msg")
       .scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
   };
+  const Ach = () => {
+    document
+      .getElementById("ach")
+      .scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+  };
   const [modalShow, setModalShow] = React.useState(false);
 
   return (
@@ -85,11 +90,14 @@ const Header = ({ showOptions }) => {
                 </button>
               </li>
               <li class="mr-4">
-                <button className="btn relative inline-flex items-center justify-start overflow-hidden transition-all bg-white rounded hover:bg-white group">
+                <button
+                  className="btn relative inline-flex items-center justify-start overflow-hidden transition-all bg-white rounded hover:bg-white group"
+                  onClick={Ach}
+                >
                   {/* purple box */}
                   <span className="w-0 h-0 rounded bg-orange-400 absolute top-0 left-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1"></span>
                   <span className="w-fullt text-xl text-myblue-light  dark:text-myblue-light font-prosto transition-colors duration-300 ease-in-out group-hover:text-white z-10 py-2 px-4 font-semibold">
-                    About Me
+                    Achievements
                   </span>
                 </button>
               </li>

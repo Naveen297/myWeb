@@ -18,7 +18,15 @@ const Skills = () => {
     <section class="text-gray-600 body-font " id="skill">
       <div class="hidden md:block container px-5 py-14 mx-auto ">
         <div class="text-center mb-20">
-          <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">
+          <h1 class="sm:text-3xl text-2xl font-bold title-font text-gray-900 mb-4 font-seasons">
+            {/* My Loving Skill Set */}
+            {/* <img
+              src="https://i.postimg.cc/8PqGMzzx/Screenshot-2023-01-29-at-4-04-31-PM.png"
+              style={{
+                width: "100",
+                height: "100",
+              }}
+            /> */}
             My Loving Skill Set
           </h1>
           <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s md:mx-none sm-mx-3">
