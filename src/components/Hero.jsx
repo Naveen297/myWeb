@@ -4,6 +4,8 @@ import { BsFillCloudDownloadFill } from "react-icons/bs";
 import { AiOutlineLinkedin } from "react-icons/ai";
 import Cards from "./cards";
 import { TypeAnimation } from "react-type-animation";
+import avatar from "../assests/avatar.png";
+import { Carousel } from "react-responsive-carousel";
 
 const Hero = () => {
   //function to download resume
@@ -26,6 +28,8 @@ const Hero = () => {
               alt="hero"
               src="https://i.postimg.cc/Xvw7yTYd/IMG-1152-Original-2.jpg"
             />
+
+            <div></div>
           </div>
           <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
             <p class="font-mono text-2xl flex justify-center items-center font-semibold text-gray-600">
