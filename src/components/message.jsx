@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { useState } from "react";
 import { useSnackbar } from "notistack";
-
+import avatar from "../assests/avatar.png";
 import { BsFillSuitHeartFill } from "react-icons/bs";
 const Message = () => {
   const form = useRef();
@@ -48,12 +48,17 @@ const Message = () => {
           <h1 class="sm:text-3xl text-2xl font-bold title-font mb-4 text-gray-900 font-seasons">
             Message Me
           </h1>
-          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
-            Send me a message and I will get back to you as soon as possible.
-          </p>
+          <div class="flex mt-2 justify-center">
+            <div class="w-16 h-1 rounded-full bg-orange-400 inline-flex"></div>
+          </div>
         </div>
         <form ref={form} onSubmit={sendEmail}>
-          <div class="lg:w-1/2 md:w-2/3 mx-auto">
+          <div class="lg:w-1/2 md:w-2/3 mx-auto flex justify-center items-center">
+            <img
+              class="object-cover object-center rounded-xl animate__animated animate__fadeIn animate__delay-1s p-1 w-1/3 h-1/2"
+              alt="hero"
+              src={avatar}
+            />
             <div class="flex flex-wrap -m-2">
               <div class="p-2 w-1/2">
                 <div class="relative">
